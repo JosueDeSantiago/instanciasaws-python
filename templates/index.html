@@ -15,6 +15,7 @@
             <th>IP pública</th>
             <th>Estado</th>
             <th>Acción</th>
+            <th>Tiempo de uso</th>
         </tr>
         {% for instance in instances %}
         <tr>
@@ -32,6 +33,7 @@
                     {% endif %}
                 </form>
             </td>
+            <td>{{cpu_average}}</td>
         </tr>
         {% endfor %}
     </table>
